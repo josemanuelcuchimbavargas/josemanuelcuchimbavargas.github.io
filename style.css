@@ -3,3 +3,17 @@
     border-radius: 4%;
 };
 
+
+
+body{
+    background: rgb(231, 238, 255);
+}
+
+#jumbotroncss{
+    background:rgb(254, 255, 201) ;
+}
+
+a{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+}
