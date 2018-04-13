@@ -1,6 +1,7 @@
 .activePersonalizado{
-    background: rgba(255, 166, 0, 0.089);
+background-color: rgb(0, 88, 131);
     border-radius: 4%;
+    color: rgb(255, 255, 255);
 };
 
 
@@ -10,10 +11,12 @@ body{
 }
 
 #jumbotroncss{
-    background:rgb(254, 255, 201) ;
+background-color: rgb(0, 88, 131); ;
+color: rgb(255, 255, 255);
 }
 
 a{
     font-family: 'Times New Roman', Times, serif;
     font-size: 18px;
+    color: 
 }
