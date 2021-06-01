@@ -484,6 +484,23 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
     <script src="main.js"></script>
+	  
+    <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js"></script>
+    <script>
+        var OneSignalCliente = window.OneSignal || [];
+        OneSignalCliente.push(function() {
+            OneSignalCliente.on('notificationDisplay', function(event) {
+                console.log('OneSignal notification displayed:', event);
+            });    
+            OneSignalCliente.on('notificationDismiss', function(event) {
+                console.warn('OneSignal notification dismissed:', event);
+            });
+            OneSignalCliente.setExternalUserId('test');    
+            OneSignalCliente.init({
+                appId: "ba563a87-fd9e-4f25-985b-f4b4ea7fb160"                
+            });   
+        });       
+  </script>
 </body>
 
 </html>
